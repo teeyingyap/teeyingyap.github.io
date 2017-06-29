@@ -1,0 +1,233 @@
+
+/* to get rid of the white space at the right side of the page */
+html,body
+{
+    width: 100%;
+    /*height: 100%;*/
+    margin: 0px;
+    padding: 0px;
+    overflow-x: auto; 
+}
+
+
+
+#home {
+  -webkit-tap-highlight-color: transparent;
+  margin: auto;
+  background: -webkit-linear-gradient(#080e1c, #295183, #6286ab, #ffb981);
+  background: linear-gradient(#080e1c, #295183, #6286ab, #ffb981);
+}
+
+
+.eb-lora {
+  /*float:left;*/
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+/*  background-color: #f6f6f6;*/
+  /*text-align: center;*/
+/*  padding: 0em 12em 12em;*/
+/*  padding-top: 192px;*/
+}
+
+.eb-lora-p {
+  font-size: 17px;
+  font-size: 1.7em;
+  max-width: 570px;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-bottom: 2em;
+  line-height: 1.9em;
+  color: #29232D;
+
+}
+
+.eb-lora-fl {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px; /* at the back is line-height */
+  font-weight: 800; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #29232D;
+/*  line-height: 42px;*/
+  text-align: center;
+
+}
+
+.side-bar {
+float:right;
+width: 392px;
+background-color: rgba(255, 255, 255, 0.7);
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 392px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: -150px;
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+#about {
+  max-width: 800px;
+  padding: 9em 8em 10em 0;
+  margin: auto;
+/*  margin: auto; to make it center 
+  display: block;*/
+}
+
+
+
+#mySidenav a:link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size:  28px;
+  color: #817a74;
+  text-decoration: none;
+  line-height: 70%;
+  text-transform: uppercase;
+}
+
+
+#mySidenav a:visited {
+   color: #817a74;
+  text-decoration: none;
+}
+
+#mySidenav a:hover {
+  color: #fff;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.about-des {
+  width: 600px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  /*font-size: 1.7em;*/
+ /* max-width: 570px;*/
+  margin-left: 10px;
+  margin-right: auto;
+  margin-bottom: 2em;
+  line-height: 1.6em;
+}
+
+#skills {
+  max-width: 1000px;
+  padding-top: 5em;
+  padding-bottom: 10em;
+/*  padding-left: 80px;*/
+  /*margin: auto;*/
+  margin-left: 75px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+ul {
+  list-style-type: none;
+  line-height: 26px;
+}
+
+
+ul li {
+  text-align: center;
+}
+
+
+ ul li:first-child {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px; /* at the back is line-height */
+  font-weight: 800; 
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+  color: #29232D;
+
+
+}
+
+
+#skills a:link {
+  background: #ffb981;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em 3em 1em 3em;
+  border-radius: 3em;
+
+
+}
+
+#skills a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#skills a:hover {
+  background: white;
+  color: #FFAFBD;  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-decoration: none;
+  border: 1px solid #FFAFBD;
+  border-radius: 3em;
+}
+
+#project-color {
+    background: #ebeced;
+}
+
+
+#projects {
+  max-width: 1000px;
+  padding-top: 5em;
+  padding-bottom: 10em;
+  padding-left: 64px;
+  /*margin: auto;*/
+  margin-left: 75px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.title {
+  /*height: 2em;*/
+  font-family: 'Open Sans', sans-serif;
+  /*width: 7em;*/
+  font-size:  24px;
+  font-weight: bold;
+  /*font-style: italic;*/
+  line-height: 1.9em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  /*margin: -0.44em 0.1em 0;*/
+  margin: auto; 
+  /*display: block;*/ /*to make it center */
+  border: 0.1em solid #000;
+  letter-spacing: 3px;
+  margin-bottom: 86px;
+
+}
+
+#projects img {
+
+}
+
+#projects b {
+  display: block;
+  text-align: center;
+}
+
+#projects p {
+  text-align: center;
+}
