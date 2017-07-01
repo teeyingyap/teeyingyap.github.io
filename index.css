@@ -9,15 +9,41 @@ html,body
     overflow-x: auto; 
 }
 
-
-
-#home {
-  -webkit-tap-highlight-color: transparent;
-  margin: auto;
-  background: -webkit-linear-gradient(#080e1c, #295183, #6286ab, #ffb981);
-  background: linear-gradient(#080e1c, #295183, #6286ab, #ffb981);
+.jumbotron {
+    background: #ff7e5f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
 }
 
+.centering {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  padding-top: 192px;
+}
+
+.home-title {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.home-title h1 {
+  border-bottom: 3px dotted #5d5d5d;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1.6em;
+  display: inline-block;
+}
 
 .eb-lora {
   /*float:left;*/
@@ -38,6 +64,7 @@ html,body
   margin-bottom: 2em;
   line-height: 1.9em;
   color: #29232D;
+  text-align: center;
 
 }
 
@@ -74,11 +101,26 @@ background-color: rgba(255, 255, 255, 0.7);
 
 
 #about {
-  max-width: 800px;
-  padding: 9em 8em 10em 0;
-  margin: auto;
+  max-width: 1000px;
+  padding-top: 5em;
+  margin-left: 75px;
+/*  padding: 9em 8em 10em 0;*/
+/*  margin: auto;*/
 /*  margin: auto; to make it center 
   display: block;*/
+}
+
+.about-des {
+/*  width: 600px;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  /*font-size: 1.7em;*/
+ /* max-width: 570px;*/
+/*  margin-left: 10px;
+  margin-right: auto;
+  margin-bottom: 2em;*/
+  line-height: 1.6em;
+  text-align: center;
 }
 
 
@@ -105,17 +147,6 @@ background-color: rgba(255, 255, 255, 0.7);
   -webkit-text-stroke-color: black;
 }
 
-.about-des {
-  width: 600px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  /*font-size: 1.7em;*/
- /* max-width: 570px;*/
-  margin-left: 10px;
-  margin-right: auto;
-  margin-bottom: 2em;
-  line-height: 1.6em;
-}
 
 #skills {
   max-width: 1000px;
