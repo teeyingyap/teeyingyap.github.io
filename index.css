@@ -45,6 +45,24 @@ html,body
   line-height: 1.6em;
   display: inline-block;
   letter-spacing: 1px;
+  opacity: 0;
+  -moz-transition: opacity 1.0s;
+  -webkit-transition: opacity 1.0s;
+  -o-transition: opacity 1.0s;
+  transition: opacity 1.0s;
+
+}
+
+.home-title h2 {
+  opacity: 0;
+  -moz-transition: opacity 1.0s;
+  -webkit-transition: opacity 1.0s;
+  -o-transition: opacity 1.0s;
+  transition: opacity 1.0s;
+}
+
+#home-name.loaded, #home-label.loaded {
+    opacity: 1;
 }
 
 
