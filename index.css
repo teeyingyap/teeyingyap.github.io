@@ -6,13 +6,15 @@ html,body
     /*height: 100%;*/
     margin: 0px;
     padding: 0px;
-    overflow-x: auto; 
+    overflow-x: hidden; 
 }
 
 .jumbotron {
-    background: #ff9966;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 0, 0.8)),
+                  url("images/green_dust_scratch.png");
+    /*background: #ff9966;   fallback for old browsers */
+    /*background: -webkit-linear-gradient(to top, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to top, #ff5e62, #ff9966);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-bottom: 0;
     height: 100vh;
     background-repeat: no-repeat;
@@ -28,19 +30,18 @@ html,body
   left: 0px;
   right: 0px;
   top: 0px;
-  padding-top: 192px;
+  padding-top: 125px;
 }
 
 .home-title {
   color: white;
-  font-family: 'Open Sans', sans-serif;
-
-
+  padding-bottom: 125px;
 }
 
 .home-title h1 {
-  border-bottom: 3px dotted #5d5d5d;
-  font-size: 58px;
+  font-family: 'Source Sans Pro', sans-serif;
+  /*border-bottom: 3px dotted #5d5d5d;*/
+  font-size: 72px;
   font-weight: 800;
   line-height: 1.6em;
   display: inline-block;
@@ -54,7 +55,11 @@ html,body
 }
 
 .home-title h2 {
+  font-family: 'Open Sans', sans-serif; 
+  text-transform: uppercase;
+  letter-spacing: 4px;
   opacity: 0;
+  font-size: 26px;
   -moz-transition: opacity 1.0s;
   -webkit-transition: opacity 1.0s;
   -o-transition: opacity 1.0s;
@@ -90,7 +95,8 @@ html,body
 }
 
 .about-title {
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif; meow*/   
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px; /* at the back is line-height */
   font-weight: 800; 
   text-transform: uppercase;
@@ -228,9 +234,12 @@ ul li {
 
 }
 
+#resume {
+  margin-bottom: 20px;
+}
 
-
-#skills a:link {
+#resume a:link {
+  font-family: 'Open Sans', sans-serif;
   background: #ff9966;  
   text-align: center;
   color: white;
@@ -251,12 +260,12 @@ ul li {
   
 }
 
-#skills a:visited {
+#resume a:visited {
   color: white;
   text-decoration: none;
 }
 
-#skills a:hover {
+#resume a:hover {
   background: white;
   color: #FFAFBD;  /* fallback for old browsers */
   color: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
@@ -270,6 +279,7 @@ ul li {
 
 #project-color {
     background: #ebeced;
+    padding-bottom: 5em;
 }
 
 
@@ -366,8 +376,17 @@ ul li {
   font-family: 'Open Sans', sans-serif;
 }
 
-.links {
+/*.links {
   text-align: justify;
+}*/
+
+.links img {
+  padding: 10px;
+  margin: 30px;
+  border:1px dashed #fff;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
 }
 
 .links > div {
