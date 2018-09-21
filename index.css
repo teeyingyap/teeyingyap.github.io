@@ -97,7 +97,7 @@ html,body
 .about-title {
   /*font-family: 'Open Sans', sans-serif; meow*/   
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px; /* at the back is line-height */
+  font-size: 24px; /* at the back is line-height */
   font-weight: 800; 
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -106,7 +106,20 @@ html,body
   text-align: center;
   position: relative;
   display: inline-block;
+  margin-bottom: 1.5em;
 
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 20%;
+  bottom: -0.5em;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #000;
 }
 
 /*.about-title::after {
@@ -128,8 +141,8 @@ html,body
   position: absolute;
   top: 0.65em;
   right: -2.5em;
-}
-*/
+}*/
+
 
 
 .sidenav {
@@ -150,6 +163,8 @@ html,body
 /*  max-width: 1000px;*/
   padding-top: 110px;
   padding-bottom: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
 /*  margin-left: 75px;*/
 /*  padding: 9em 8em 10em 0;*/
 /*  margin: auto;*/
@@ -160,17 +175,37 @@ html,body
 .about-des {
 /*  width: 600px;*/
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: lighter;
   /*font-size: 1.7em;*/
  /* max-width: 570px;*/
-/*  margin-left: 10px;
-  margin-right: auto;
-  margin-bottom: 2em;*/
+  margin-bottom: 2em;
   line-height: 1.6em;
-  text-align: center;
 }
 
+.about-timeline {
+/*  width: 600px;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  /*font-size: 1.7em;*/
+ /* max-width: 570px;*/
+  margin-bottom: 2em;
+  line-height: 2.5em;
+  /*display: block;*/
+ /* margin: 0 auto;*/
+}
 
+.profile {
+  width: 225px;
+  height: 225px;
+  margin: 0 auto 20px;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 5px solid #29232D;
+}
 
 #mySidenav a:link {
   font-family: 'Open Sans', sans-serif;
