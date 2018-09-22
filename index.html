@@ -11,8 +11,6 @@
     <meta property="og:url" content="https://teeyingyap.github.io/">
     <meta property="og:image" content="https://teeyingyap.github.io/images/teeyingyap.jpg">
     
-
-    <!-- jquery -->
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet"> 
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
@@ -20,24 +18,13 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
+
 
   </head>
 
   <body style="margin: 0;">
-<!-- 
-  <div id="mySidenav" class="sidenav">
-    <p><a href="#home">Home</a></p>
-    <p><a href="#about">About</a></p>
-    <p><a href="#projects">Projects</a></p>
-    <p><a href="#contact">Contact</a></p>
-  </div>
-   -->
+
 <div class="jumbotron" id="home" >
   <div class="centering">
      <div class="home-title">
@@ -48,11 +35,11 @@
     <div class="container">
       <div class= "row">
         <div class="col-md-6 col-md-offset-3">
-          <div class="links">
+          <div id="links">
 
-          <div><a href="mailto:yapteeying@gmail.com"><img src="images/mail_logo.png" alt="Mail"></a></div>
-          <div><a href="https://github.com/teeyingyap" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github"></a></div>
-          <div><a href="https://facebook.com/teeyingyap" target="_blank"><img src="images/fb_logo32.png" alt="Facebook"></a></div>
+          <a href="mailto:yapteeying@gmail.com"><img src="images/mail_logo.png" alt="Mail"></a>
+          <a href="https://github.com/teeyingyap" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github"></a>
+          <a href="https://facebook.com/teeyingyap" target="_blank"><img src="images/fb_logo32.png" alt="Facebook"></a>
 
           </div>
         </div>
@@ -66,15 +53,9 @@
 
     <section id="about" class="row">
       <div class="container">
-<!--        <div class= "row">
-         <div class="col-md-4 col-md-offset-4">
-            <p class="title">About</p>
-         </div>
-       </div> -->
-
       <div class= "row">
         <div class="col-md-12" style="text-align: center;">
-              <p class="about-title">hi, I'm Tee Ying.</p>
+              <p class="about-title"><span class="about-animate"></span></p>
               <p class="about-des">I like to build things for the web & teach people the joy of it.</p>
         </div>
       </div>
@@ -102,134 +83,151 @@
     </section>
 
 
-
-
-
-<!--        <div class= "row">
-         <div class="col-md-4 col-md-offset-4">
-           <p class="title" style="margin-left: 24px;">Skills</p>
-         </div>
-       </div> -->
     <section id="skills" class="row">
     <div class="container">
-       <div class="row" style="padding-bottom: 88px">
-          <div class="col-md-4">  
-            <ul>
-              <li>Languages</li>
-              <li>Ruby</li>
-              <li>Javascript</li>
-              <li>HTML5/CSS3</li>
-              <li>SQL</li>
-            </ul>
+       <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <p class="skills"><span>Languages</span> 
+              <br>
+              Ruby
+              <br>
+              Javascript
+              <br>
+              HTML5/CSS3
+              <br>
+              SQL
+              <br>
+            </p>  
+          </div>
+          
+          <div class="col-md-4 col-sm-4">
+            <p class="skills"><span>Frameworks</span>
+              <br>
+              Ruby on Rails
+              <br>
+              Sinatra
+              <br>
+              Capybara
+              <br>
+              Bootstrap
+              <br>
+            </p>  
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <p class="skills"><span>Concepts</span>
+              <br>
+              OOP
+              <br>
+              REST
+              <br>
+              TDD
+              <br>
+            </p>  
           </div>
 
-          <div class="col-md-4">
-            <ul>
-              <li>Frameworks</li>
-              <li>Ruby on Rails</li>
-              <li>Sinatra</li>
-              <li>Capybara</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-
-
-          <div class="col-md-4">
-            <ul>
-              <li>Concepts</li>
-              <li>OOP</li>
-              <li>REST</li>
-              <li>TDD</li>
-
-            </ul>
-
-          </div>
-        </div>
-
-        
-</div>
+        </div>       
+      </div>
     </section>
 
-    <section id="project-color" class="row">   
-      <div id="projects">
+    <section id="project" class="row">   
         <div class= "row">
-          <div class="col-md-4 col-md-offset-4">
-            <p class="title">Projects</p>
+          <div class="col-md-12" style="text-align: center;">
+            <p id="project-title">Projects</p>
+            <p></p>
           </div>
         </div>
        <div class="container">
         <div class= "row">
-          <div class="col-md-4">  
-            <b>Imageria</b>
-            <p>Amazon Rekognition API Project</p>
+          <div class="col-md-4">
+            <span class="projects">
+              <b>Imageria</b>
+              <p>Amazon Rekognition API Project</p>
 
-            <p><a href="https://github.com/teeyingyap/image-recognition" target="_blank">Github</a> | <a href="http://imageria.herokuapp.com/" target="_blank">Site</a></p>
+              <p><a href="https://github.com/teeyingyap/image-recognition" target="_blank">Github</a> | <a href="http://imageria.herokuapp.com/" target="_blank">Site</a></p>
 
-            <a href="http://imageria.herokuapp.com/" target="_blank"><img src="images/imageria.png" alt="Imageria" class="img-responsive"></a>
+              <a href="http://imageria.herokuapp.com/" target="_blank"><img src="images/imageria.png" alt="Imageria" class="img-responsive"></a>
+            </span>  
+            
           </div>
 
 
 
-          <div class="col-md-4">  
+          <div class="col-md-4">
+          <span class="projects">  
             <b>Cullab</b>
             <p>company event board with live updates</p>
 
             <p><a href="https://github.com/teeyingyap/cullab" target="_blank">Github</a> | <a href="http://cullab.herokuapp.com/" target="_blank">Site</a></p>
 
             <a href="http://cullab.herokuapp.com/" target="_blank"><img src="images/cullab.png" alt="Cullab" class="img-responsive"></a>
+          </span>
           </div>
 
 
 
 
           <div class="col-md-4">
+            <span class="projects">
             <b>Jarousell</b>
             <p>Carousell clone</p>
 
             <p><a href="https://github.com/teeyingyap/carousell" target="_blank">Github</a> | <a href="http:/jarousell.herokuapp.com/" target="_blank">Site</a></p>
 
             <a href="http://jarousell.herokuapp.com/" target="_blank"><img src="images/jarousell.png" alt="Jarousell" class="img-responsive"></a>
+          </span>
           </div>
         </div>
 
-        <div class= "row" style="margin-top: 31px;">
+        <div class= "row">
           <div class="col-md-4">
+            <span class="projects">
             <b>Pairbnb</b>
             <p>Airbnb clone</p>
 
             <p><a href="https://github.com/teeyingyap/pairbnb" target="_blank">Github</a> | <a href="http:/jasminebnb.herokuapp.com/" target="_blank">Site</a></p>
 
             <a href="http://jasminebnb.herokuapp.com/" target="_blank"><img src="images/pairbnb.png" alt="Pairbnb" class="img-responsive"></a>
+          </span>
           </div>
 
           <div class="col-md-4">  
+            <span class="projects">
             <b>Meowzr</b>
             <p>Twitter clone</p>
             <p><a href="https://github.com/teeyingyap/sinatra-twitter" target="_blank">Github</a> | <a href="http://meowzr.herokuapp.com/" target="_blank">Site</a></p>
             <a href="http://meowzr.herokuapp.com/" target="_blank"><img src="images/meowzr.png" alt="Meowzr" class="img-responsive"></a>
+          </span>
           </div>
 
           <div class="col-md-4">
+            <span class="projects">
             <b>Bitsy</b>
             <p>Bitly clone</p>
             <p><a href="https://github.com/teeyingyap/bitly-clone" target="_blank">Github</a> | <a href="http://itsybitsyurl.herokuapp.com/" target="_blank">Site</a></p>
             <a href="http://itsybitsyurl.herokuapp.com/" target="_blank"><img src="images/bitsy.png" alt="Bitsy" class="img-responsive"></a>
+          </span>
           </div>
 
         </div>
        </div>
-      </div>
-
-      <div class= "row" id="resume">
-          <div class="col-md-12" style="text-align: center;">
-            <a href="https://resume.creddle.io/resume/7dmjd4tlovi" target="_blank">My Resume</a>
-          </div>
-      </div>
     </section>
 
 
+    <div class= "row" id="resume">
+          <div class="col-md-12" style="text-align: center;">
+            <a href="https://resume.creddle.io/resume/7dmjd4tlovi" target="_blank">My Resume</a>
+          </div>
+    </div>
 
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

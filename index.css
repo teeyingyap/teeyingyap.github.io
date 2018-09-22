@@ -22,6 +22,7 @@ html,body
     -webkit-background-size: cover;
     background-size: cover;
     text-align: center;
+    color: white;
 }
 
 .centering {
@@ -33,69 +34,73 @@ html,body
   padding-top: 125px;
 }
 
-.home-title {
-  color: white;
-  padding-bottom: 125px;
-}
 
 .home-title h1 {
   font-family: 'Source Sans Pro', sans-serif;
-  /*border-bottom: 3px dotted #5d5d5d;*/
   font-size: 72px;
   font-weight: 800;
   line-height: 1.6em;
   display: inline-block;
   letter-spacing: 1px;
-  opacity: 0;
-  -moz-transition: opacity 1.0s;
-  -webkit-transition: opacity 1.0s;
-  -o-transition: opacity 1.0s;
-  transition: opacity 1.0s;
-
 }
 
 .home-title h2 {
   font-family: 'Open Sans', sans-serif; 
   text-transform: uppercase;
   letter-spacing: 4px;
-  opacity: 0;
   font-size: 26px;
+
+}
+
+#home-name, #home-label, #links {
+  opacity: 0;
   -moz-transition: opacity 1.0s;
   -webkit-transition: opacity 1.0s;
   -o-transition: opacity 1.0s;
   transition: opacity 1.0s;
 }
 
-#home-name.loaded, #home-label.loaded {
+#home-name.loaded, #home-label.loaded, #links.loaded {
     opacity: 1;
 }
 
-
-.eb-lora {
-  /*float:left;*/
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.7);
-/*  background-color: #f6f6f6;*/
-  /*text-align: center;*/
-/*  padding: 0em 12em 12em;*/
-/*  padding-top: 192px;*/
+#links {
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
-.eb-lora-p {
-  font-size: 17px;
-  font-size: 1.7em;
-  max-width: 570px;
-  margin-left: 10px;
-  margin-right: auto;
-  margin-bottom: 2em;
-  line-height: 1.9em;
-  color: #29232D;
-  text-align: center;
-
+#links img {
+  padding: 10px;
+  margin: 30px;
+  border:1px dashed #fff;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
 }
 
-.about-title {
-  /*font-family: 'Open Sans', sans-serif; meow*/   
+#links > a {
+/*    width: 100px;*/ /* Declare your value. Can be in relative units. */
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1;
+    -webkit-transition: opacity 0.1s ease-out;  
+    -moz-transition: opacity 0.1s ease-out;  
+    -o-transition: opacity 0.1s ease-out;  
+    transition: opacity 0.1s ease-out; 
+}
+
+#links > a:hover {
+  opacity: 0.5;
+}
+
+#links:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+
+
+.about-title {  
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px; /* at the back is line-height */
   font-weight: 800; 
@@ -110,7 +115,7 @@ html,body
 
 }
 
-.about-title::after {
+.about-title::after, #project-title::after {
   content: '';
   position: absolute;
   height: 1px;
@@ -121,29 +126,6 @@ html,body
   margin: 0 auto;
   background-color: #000;
 }
-
-/*.about-title::after {
-  content: '';
-  height: 1px;
-  background-color: #d44b15;
-  width: 2em;
-  position: absolute;
-  top: 0.65em;
-  left: -2.5em;
-}
-
-
-.about-title::before {
-  content: '';
-  height: 1px;
-  background-color: #d44b15;
-  width: 2em;
-  position: absolute;
-  top: 0.65em;
-  right: -2.5em;
-}*/
-
-
 
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -163,8 +145,8 @@ html,body
 /*  max-width: 1000px;*/
   padding-top: 110px;
   padding-bottom: 40px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 /*  margin-left: 75px;*/
 /*  padding: 9em 8em 10em 0;*/
 /*  margin: auto;*/
@@ -219,7 +201,7 @@ html,body
 
 
 #mySidenav a:visited {
-   color: #817a74;
+  color: #817a74;
   text-decoration: none;
 }
 
@@ -231,46 +213,25 @@ html,body
 
 
 #skills {
-/*  max-width: 1000px;
-  padding-top: 5em;
-  padding-bottom: 10em;*/
-/*  padding-left: 80px;*/
-  /*margin: auto;*/
-/*  margin-left: 75px;*/
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 40px;
-}
-
-#skills p {
   text-align: center;
+  line-height: 26px; 
+  font-size: 16px;
 }
 
 
-ul {
-  list-style-type: none;
-  line-height: 26px;
-}
-
-
-ul li {
-  text-align: center;
-}
-
-
- ul li:first-child {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px; /* at the back is line-height */
-  font-weight: 800; 
+.skills span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px; /* at the back is line-height */
   text-transform: uppercase;
-
   letter-spacing: 1px;
   color: #29232D;
-
-
 }
 
 #resume {
-  margin-bottom: 20px;
+  margin-bottom: 3em;
+  padding-top: 5em;
 }
 
 #resume a:link {
@@ -311,91 +272,54 @@ ul li {
 }
 
 
-
-#project-color {
-    background: #ebeced;
-    padding-bottom: 5em;
-}
-
-
-#projects {
-/*  max-width: 1000px;*/
-  padding-top: 5em;
-  padding-bottom: 10em;
-/*  padding-left: 64px;*/
-/*  margin: auto;*/
-/*  margin-left: 75px;*/
-  font-family: 'Open Sans', sans-serif;
-
-}
-
-.title {
+#project-title {
   /*height: 2em;*/
   font-family: 'Open Sans', sans-serif;
   color: #29232D;
   /*width: 7em;*/
   font-size:  24px;
   font-weight: bold;
-  /*font-style: italic;*/
   line-height: 1.9em;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  /*margin: -0.44em 0.1em 0;*/
-  margin: auto; 
-  /*display: block;*/ /*to make it center */
-/*  border: 0.1em solid #29232D;*/
-  letter-spacing: 3px;
-  margin-bottom: 86px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 5px;
 
 }
 
 
-.title::after {
-  content: '';
-  height: 1px;
-  background-color: #29232D;
-  width: 4em;
-  position: absolute;
-  top: 0.85em;
-  left: 1.5em;
+#project {
+  padding-top: 5em;
+  font-family: 'Open Sans', sans-serif;
+  background: #ebeced;
+  padding-bottom: 5em;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-
-.title::before {
-  content: '';
-  height: 1px;
-  background-color: #29232D;
-  width: 4em;
-  position: absolute;
-  top: 0.85em;
-  right: 1.5em;
+.projects {
+  display: inline-block; /*because it's a span */
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-
-
-#projects img {
-
-}
-
-#projects b {
+#project b {
   display: block;
-  text-align: center;
 }
 
-#projects p {
-  text-align: center;
-}
 
-#projects p > a:link {
+#project p > a:link {
   color: #FFAFBD;
 }
 
-#projects p > a:visited {
+#project p > a:visited {
   color: #FFAFBD;
 }
 
-#projects p > a:hover {
+#project p > a:hover {
   color: #ffb981;
   font-weight: bold;
 }
@@ -411,38 +335,21 @@ ul li {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*.links {
-  text-align: justify;
-}*/
 
-.links img {
-  padding: 10px;
-  margin: 30px;
-  border:1px dashed #fff;
-  border-radius: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  #home-name {
+    font-size: 2.5em;
+  }
+
+  #home-label {
+    font-size: 1.2em;
+  }
+
+  #links img {
+    margin: 20px;
+  }
+
+
 }
-
-.links > div {
-/*    width: 100px;*/ /* Declare your value. Can be in relative units. */
-    display: inline-block;
-    vertical-align: top;
-    opacity: 1;
-    -webkit-transition: opacity 0.1s ease-out;  
-    -moz-transition: opacity 0.1s ease-out;  
-    -o-transition: opacity 0.1s ease-out;  
-    transition: opacity 0.1s ease-out; 
-}
-
-.links > div:hover {
-  opacity: 0.5;
-}
-
-.links:after {
-  content: "";
-  width: 100%;
-  display: inline-block;
-}
-
-
