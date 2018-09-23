@@ -20,8 +20,6 @@ TitleAnimate.prototype.tick = function() {
   }, delta);
 };
 
-
-
 var waypoint = new Waypoint({
   element: elements[0],
   handler: function(direction) {
@@ -40,18 +38,13 @@ var waypoint = new Waypoint({
   offset: 'bottom-in-view'
 })
 
-
-
-
 window.onload = function() {
 	var a = document.getElementById("home-name");
 	var b = document.getElementById("home-label");
 	var c = document.getElementById("links");
+  var animateEl = [a, b, c];
 
-    a.className += " loaded";
-    b.className += " loaded";
-    c.className += " loaded";
-
-  	
+  for (var i = 0; i < animateEl.length; i++) {
+    animateEl[i].className += " loaded";
+  }  	
 }
-

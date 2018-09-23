@@ -9,9 +9,15 @@ html,body
     overflow-x: hidden; 
 }
 
+#home {
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #183642;
+}
+
 .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 0, 0.8)),
-                  url("images/green_dust_scratch.png");
+    /*background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 0, 0.8)),
+                  url("images/green_dust_scratch.png");*/
     /*background: #ff9966;   fallback for old browsers */
     /*background: -webkit-linear-gradient(to top, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to top, #ff5e62, #ff9966);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -23,6 +29,7 @@ html,body
     background-size: cover;
     text-align: center;
     color: white;
+    
 }
 
 .centering {
@@ -324,6 +331,31 @@ html,body
   font-weight: bold;
 }
 
+
+.photo-container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.photo-container:hover .overlay{
+  opacity: 1;
+}
 
 #contact {
 /*  max-width: 1000px;*/
