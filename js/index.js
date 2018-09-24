@@ -6,6 +6,7 @@ var TitleAnimate = function(el) {
   this.tick();
 };
 
+
 TitleAnimate.prototype.tick = function() {
   var fullTxt = 'Hi, I\'m Tee Ying.';
   this.txt = fullTxt.substring(0, this.txt.length + 1);
@@ -38,11 +39,21 @@ var waypoint = new Waypoint({
   offset: 'bottom-in-view'
 })
 
+
+document.body.setAttribute("class", "noscroll");
+document.getElementById("overlay").style.display = "block";
+document.getElementById("spinner").style.display = "block";
+
 window.onload = function() {
 	var a = document.getElementById("home-name");
 	var b = document.getElementById("home-label");
 	var c = document.getElementById("links");
   var animateEl = [a, b, c];
+
+  document.getElementById("spinner").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+
+  document.body.className = document.body.className.replace(/\bnoscroll\b/,'');
 
   for (var i = 0; i < animateEl.length; i++) {
     animateEl[i].className += " loaded";
