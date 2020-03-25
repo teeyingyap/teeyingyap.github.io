@@ -60,7 +60,7 @@ html,body
 }
 
 #home-name, #home-label, #links {
-  opacity: 0;
+  opacity: 1;
   -moz-transition: opacity 1.0s;
   -webkit-transition: opacity 1.0s;
   -o-transition: opacity 1.0s;
@@ -72,14 +72,14 @@ html,body
 }
 
 #links {
-  padding-top: 50px;
+  padding-top: 25px;
   margin-bottom: 50px;
 }
 
 #links img {
   padding: 10px;
   margin: 30px;
-  border:1px dashed #fff;
+  border:1px dashed #23527c;
   border-radius: 500px;
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -122,7 +122,7 @@ html,body
 
 }
 
-.about-title::after, #project-title::after {
+.about-title::after, .project-title::after{
   content: '';
   position: absolute;
   height: 1px;
@@ -133,6 +133,10 @@ html,body
   margin: 0 auto;
   background-color: #000;
 }
+
+
+
+
 
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -164,7 +168,7 @@ html,body
 .about-des {
 /*  width: 600px;*/
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: lighter;
   /*font-size: 1.7em;*/
  /* max-width: 570px;*/
@@ -175,9 +179,10 @@ html,body
 .about-timeline {
 /*  width: 600px;*/
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   /*font-size: 1.7em;*/
  /* max-width: 570px;*/
+  margin-top: 1em;
   margin-bottom: 2em;
   line-height: 2.5em;
   /*display: block;*/
@@ -187,13 +192,14 @@ html,body
 .profile {
   width: 225px;
   height: 225px;
-  margin: 0 auto 20px;
+  margin: 0 auto 2px;
 }
 
 #profile-pic {
   border-radius: 50%;
   vertical-align: middle;
   border: 5px solid #29232D;
+  opacity: 0.9;
 }
 
 #mySidenav a:link {
@@ -279,16 +285,16 @@ html,body
 }
 
 
-#project-title {
+.project-title {
   /*height: 2em;*/
   font-family: 'Open Sans', sans-serif;
   color: #29232D;
   /*width: 7em;*/
-  font-size:  24px;
+  font-size:  20px;
   font-weight: bold;
   line-height: 1.9em;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   position: relative;
   display: inline-block;
@@ -381,7 +387,7 @@ html,body
   left: 0;
   right: 0;
   z-index: 100;
-  background: #183642;
+  background: white;
 }
 
 #spinner {
@@ -394,7 +400,7 @@ html,body
   margin-top: -20px;
   margin-left: -20px;
   z-index: 101;
-  background-color: white;
+  background-color: #183642;
 
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
