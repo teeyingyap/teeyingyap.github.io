@@ -448,5 +448,19 @@ html,body
     margin: 20px;
   }
 
+  .profile {
+    width: 200px;
+    height: 200px;
+  } 
 
+}
+
+.footer {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 0.9em;
+  font-weight: lighter;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  line-height: 1.6em;
+  text-align: center;
 }

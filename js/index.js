@@ -59,3 +59,7 @@ window.onload = function() {
     animateEl[i].className += " loaded";
   }  	
 }
+
+var currentDate = new Date();
+var footer = document.getElementById("copyright");
+footer.textContent = currentDate.getFullYear() + footer.textContent;
