@@ -344,13 +344,17 @@ body[theme='dark'] {
   }
 
 
+  #about {
+    padding-top: 15px;
+  }
+
   #links img {
     margin: 20px;
   }
 
   .profile {
-    width: 200px;
-    height: 200px;
+    width: 145px;
+    height: 145px;
   } 
 
   #home-name {
