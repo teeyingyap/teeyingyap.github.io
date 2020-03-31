@@ -67,7 +67,6 @@ footer.textContent = currentDate.getFullYear() + footer.textContent;
 
 function switchTheme() {
   var element = document.body;
-  var icon = document.getElementById("darkmodeicon");
   element.classList.add('color-theme-in-transition');
   element.setAttribute('theme', element.getAttribute('theme') === "dark" ? "light" : "dark");
   window.setTimeout(function() {

@@ -47,7 +47,12 @@ body[theme='dark'] {
   margin-bottom: 50px;
 }
 
-#links img {
+#links .icon {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: var(--titlecolor);
+  width: 4em;
+  height: 4em;
   padding: 10px;
   margin: 30px;
   border:1px dashed #23527c;
@@ -343,13 +348,16 @@ body[theme='dark'] {
     padding-top: 0px;
   }
 
+  #profile-pic {
+    border-width: 3px;
+  }
 
   #about {
     padding-top: 15px;
   }
 
-  #links img {
-    margin: 20px;
+  #links .icon {
+    margin: 15px;
   }
 
   .profile {
