@@ -1,14 +1,15 @@
 
 /* to get rid of the white space at the right side of the page */
-html,body[data-theme='light']
+html[data-theme='light'],body[data-theme='light']
 {
     width: 100%;
-    /*height: 100%;*/
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
     background-color: white;
     /* CSS Variable */
+    --about-background: white;
+    --navbar-background: var(--about-background);
     --titlecolor: #29232D;
     --linkcolor: #183642;
     --backgroundcolor: white;
@@ -29,7 +30,9 @@ body[data-theme='dark'] {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background-color: #183642;
+  background-color: #1f2831;
+  --about-background: #183642;
+  --navbar-background: var(--about-background);
   --titlecolor: #c0d0e1;
   --linkcolor: #d7d4e7;
   --backgroundcolor: #183642;
@@ -43,7 +46,11 @@ body[data-theme='dark'] {
   --svgcolor: #c0d0e1;
 }
 
-
+#navbar {
+  background-color: var(--navbar-background);
+  padding-right: 3em;
+  padding-left: 3em;
+}
 
 #links {
   padding-top: 25px;
@@ -126,6 +133,7 @@ body[data-theme='dark'] {
   /*padding-bottom: 40px;*/
   padding-right: 15px;
   padding-left: 15px;
+  background-color: var(--about-background);
 /*  margin-left: 75px;*/
 /*  padding: 9em 8em 10em 0;*/
 /*  margin: auto;*/
